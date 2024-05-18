@@ -28,6 +28,7 @@ font-size: 16px;
     justify-content: space-between;
     font-family: 'Figtree', sans-serif;
     width: min-content;
+    max-width: 400px;
     border-radius: 10px;
     border-style: solid;
     border-color: var(--Black);
@@ -69,4 +70,37 @@ font-size: 16px;
 .card-publish{
     margin-top: 10px;
     font-weight: 300;
+}
+
+
+@media (max-width: 375px) {
+    .main-body {
+        padding: 10px;
+    }
+    
+    .main-card {
+        margin: 10px;
+        padding: 15px;
+        width: 100%; /* Use full width for mobile */
+        box-shadow: 5px 5px var(--Black); /* Smaller shadow for mobile */
+    }
+
+    .card-tag {
+        padding: 3px;
+    }
+
+    .card-person img {
+        height: 25px;
+        width: 25px;
+    }
+}
+
+/* Media Query for Desktop */
+@media (min-width: 1440px) {
+    .main-card {
+        margin: 50px;
+        padding: 30px;
+        max-width: 600px; /* Allow larger card on desktop */
+        box-shadow: 15px 15px var(--Black); /* Larger shadow for desktop */
+    }
 }
