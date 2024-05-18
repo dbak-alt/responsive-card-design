@@ -77,11 +77,14 @@ font-size: 16px;
     .main-body {
         padding: 10px;
     }
-    
+    .main-body svg{
+        width: 100%;
+    }
     .main-card {
         margin: 10px;
         padding: 15px;
-        width: 100%; /* Use full width for mobile */
+        width: 90%; /* Use full width for mobile */
+        max-width: max-content;
         box-shadow: 5px 5px var(--Black); /* Smaller shadow for mobile */
     }
 
