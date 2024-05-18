@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap');
+
+
+:root{
+    --yellow:  hsl(47, 88%, 63%);
+--White: hsl(0, 0%, 100%);
+--Grey: hsl(0, 0%, 50%);
+--Black: hsl(0, 0%, 7%);
+font-size: 16px;
+}
+
+.main-body{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--yellow);
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+
+.main-card{
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+    padding: 20px;
+    justify-content: space-between;
+    font-family: 'Figtree', sans-serif;
+    width: min-content;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: var(--Black);
+    box-shadow: 10px 10px var(--Black);
+}
+
+.card-description{
+    color: var(--Grey);
+    font-weight: 500;
+}
+
+.main-card h2{
+    font-weight: 800;
+    color: var(--Black);
+}
+
+.card-tag{
+    background-color: var(--yellow);
+    width: min-content;
+    padding: 5px;
+    color: var(--Black);
+    font-weight: 800;
+    border-radius: 5px;
+}
+
+.card-person{
+    height: min-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 800;
+}
+
+.card-person img{
+    height: 30px;
+    width: 30px;
+}
+
+.card-publish{
+    margin-top: 10px;
+    font-weight: 300;
+}
